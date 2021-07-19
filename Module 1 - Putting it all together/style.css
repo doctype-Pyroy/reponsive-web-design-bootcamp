@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 900;
+}
+
+h2, a {
+	color:#ef5839;
+}
+
+h1, h2, p{
+	margin: 0px;
+}
+
+header, section{
+	padding: 50px 100px;
+}
+
+
+h2 {
+	padding-bottom: 25px;
+}
+
+a:hover, a:focus {
+	color: green;
+	background: lightgreen;
+}
+
+.blue-box {
+	background: #2e354f;
+	color: #fff;
+}
+
+.container {
+	width: 620px;
+	margin: 0 auto;
+}
+
+.p-space{
+	padding-top: 25px;
+}
+
+.bold{
+	font-weight: 900;
+}
+
+.btn {
+	display: inline-block;
+	padding:15px 35px;
+	margin: 35px 10px 0 0;
+	text-decoration: none;
+	font-weight: 900;
+}
+
+.red-btn {
+	color: #fff;
+	background: #ef5839;
+}
+
+.white-btn {
+	color: #000;
+	background: #fff;
+}
