@@ -13,13 +13,16 @@ h2, a {
 }
 
 h1, h2, p{
-	margin: 0px;
+	margin: 0;
 }
 
 header, section{
 	padding: 50px 100px;
 }
 
+h1 {
+	font-size: 36px;
+}
 
 h2 {
 	padding-bottom: 25px;
@@ -64,4 +67,5 @@ a:hover, a:focus {
 .white-btn {
 	color: #000;
 	background: #fff;
+	
 }
