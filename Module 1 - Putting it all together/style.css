@@ -4,6 +4,10 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+img {
+	width: 100%;
+}
+
 h1, h2 {
 	font-weight: 900;
 }
@@ -39,8 +43,10 @@ a:hover, a:focus {
 }
 
 .container {
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
+	border: fuchsia 2px solid;
+	max-width: 620px;
 }
 
 .p-space{
@@ -57,6 +63,7 @@ a:hover, a:focus {
 	margin: 35px 10px 0 0;
 	text-decoration: none;
 	font-weight: 900;
+	
 }
 
 .red-btn {
@@ -69,3 +76,4 @@ a:hover, a:focus {
 	background: #fff;
 	
 }
+
