@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: .8rem;
+}
+
+img {
+    width: 100%
+}
+
+.titleColor {
+    color: goldenrod
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+   
+}
+
+.columns {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.col {
+    margin-right: 2rem;
+}
+
+.col-center {
+    width: 500%;
+}
+
+.col-brown {
+    padding: 0.7em;
+    background: brown;
+    max-width: 10em;
+    color: #fff;
+    margin-right: 0;
+}
