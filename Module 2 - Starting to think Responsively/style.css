@@ -3,52 +3,103 @@ html, body {
     padding: 0;
     font-size: 100%
 }
+body {
+    font-size: 1.125rem;
+}
 
+/* @media (min-width: 800px) {
+    body {
+        background: purple;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background : orange;
+    }
+} */
+
+/* typography */
 h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
+h1 span {
+    color: #B7832F;
+}
+
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 p {
     font-size: .8rem;
+    margin-top: 0;
 }
-
+/* layout */
 img {
-    width: 100%
+    max-width: 100%
 }
 
-.titleColor {
-    color: goldenrod
-}
+/* .titleColor {
+    color: #B7832F;
+} */
 
 .container {
     margin: 0 auto;
-    max-width: 800px;
-   
+    max-width: 980px;
+    width: 95%;
 }
 
 .columns {
     display: flex;
     margin-top: 1.5rem;
+    color: #707070;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.col {
+/* bad place for col-# because they are rewritten by lower properties */
+/* @media (max-width: 700px) {
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 100%;
+    }
+} */
+
+/* .col {
     margin-right: 2rem;
+} */
+.col-1{
+    width: 20%
 }
 
-.col-center {
-    width: 500%;
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
 }
 
 .col-brown {
     padding: 0.7em;
-    background: brown;
-    max-width: 10em;
+    background: #312614;
     color: #fff;
-    margin-right: 0;
+}
+
+/* putting  media queries here under everything */
+@media (max-width: 700px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 100%;
+    }
 }
