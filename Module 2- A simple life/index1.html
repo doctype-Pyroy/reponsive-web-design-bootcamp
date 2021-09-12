@@ -3,13 +3,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <title>Living the Simple life</title>
 </head>
     <body>
         <header>
-            <div class="container container-nav">
+            <div class="container container-flex">
                 <div id="logo">
                     <h1 id="title">Living the simple life</h1>
                     <p id="subtitle">A BLOG EXPLORING MINIMALISM IN LIFE</p>
@@ -24,18 +24,17 @@
             </div> 
         </header>
 
-        <div class="container border-red">
+        <div class="container border-red container-flex">
             <main role="main">
-                <div class="featured-news">
                     <article class="article-featured">
                         <h2>Finding simplicity in life</h2>
                         <img src="img/life.jpg" alt="Minimalist table setup">
                         <p class="article-date-comments">July 23, 2019  |  3 comments</p>
-                        <p><span class="bold">Life can get complicated really quickly,</span> but it doesn't have to be! 
-                            There are many ways to simplify your life, <a href="#">a few of which we've explored in the past</a>. 
+                        <p><strong>Life can get complicated really quickly,</strong> but it doesn't have to be! 
+                            There are many ways to simplify your life, <a href="#" class="text-link">a few of which we've explored in the past</a>. 
                             This week we're taking a bit of a approach though, in how you can find simplicity in the life you already living. 
                         </p>
-                        <a href="#">continue reading</a>
+                        <a href="#" class="article-read-more">continue reading</a>
                     </article>
 
                     <article class="article-recent">
@@ -48,7 +47,7 @@
                             <h2>Keeping cooking simple</h2>
                             <p>Food is a very important part of everyone's life. If you want to be healthy, you have to eat healthy.
                                One of the easiest ways to do that is to keep your cooking nice and simple.</p>
-                            <a href="#">continue reading</a>
+                            <a href="#" class="article-read-more">continue reading</a>
                         </div>
                     </article>
 
@@ -64,7 +63,7 @@
                                  it ruins their relationship with others and it leads to burnout.
                                  By keeping your work life as simple as possible, it will help balance everything out. 
                              </p>
-                            <p class="continue">continue reading</p>
+                             <a href="#" class="article-read-more">continue reading</a>
                         </div>
                     </article>
 
@@ -79,12 +78,11 @@
                                 <p>A home isn't a home until you've decorated a little. People either don't decorate, 
                                      or they go overboard and it doesn't have the impact they were hoping for. 
                                      Staying simple will help draw the eye where you want it to and make things pop like never before.</p>
-                                <a href="#">continue reading</a>
+                                     <a href="#" class="article-read-more">continue reading</a>
                             </div>
                      </article>
-                </div>        
             </main> 
-            <aside id="sidebar">
+            <aside id="sidebar" class="border-red">
                 <div class="sidebar-widget">
                     <h2 class="widget-title">About me</h2>
                    <img src="img/about-me.jpg" alt="Picture of me">
@@ -94,7 +92,7 @@
                 <div  class="sidebar-widget">
                     <h2 class="widget-title">Recent posts</h2>
                     <div class="sidebar-recent-post">
-                        <img class="widget-image" src="img/food.jpg" alt="minimalist food plate">]
+                        <img class="widget-image" src="img/food.jpg" alt="minimalist food plate">
                         <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
                     </div>
 
@@ -112,8 +110,8 @@
         </div>
 
         <footer>
-            <p>Living the Simple life</p>
-            <p>Copyright 2019</p>
+            <p class="footer-p">Living the Simple life</p>
+            <p class="footer-p">Copyright 2019</p>
         </footer>
 
     </body>
