@@ -1,14 +1,22 @@
+html{
+    font-size: 0.9rem;
+}
+
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3125rem;
     font-weight: 300;
-    margin: 0;
+    margin: 0 ;
 }
 
 .container {
     max-width: 570px;
     margin: 0 auto;
+    padding: 1rem;
+}
+
+img {
+    max-width: 40%;
 }
 
 h1,
@@ -28,11 +36,11 @@ h2 {
     border-bottom: solid 1px #c4c4c4;
     
     padding: 0.5em 0;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 h3 {
-    font-size: 2.1rem;
+    font-size: 2.25rem;
     font-weight: 900;
     margin-bottom: 0;
 }
@@ -46,7 +54,7 @@ h1 .accent-text {
 }
 
 h2 .accent-text {
-    font-size: 3.2rem;
+    font-size: 3.75rem;
 }
 
 .accent-text,
@@ -72,12 +80,12 @@ a:focus {
 
 .small-text {
     font-size: 1rem;
-    margin-top: .5em;
+    margin-top: .3125em;
 } 
 
 header,
 section {
-    padding: 3em 0;
+    padding: 6.25em 0;
 }
 
 .inverse {
@@ -96,12 +104,69 @@ section {
     color: #252525;
     text-decoration: none;
     background: #99D930;
-    padding: .9rem 1.5rem;
-    margin-top: 1.5rem;
+    padding: .625rem 1.5625rem;
+    margin-top: 1.5625rem;
 }
 
 .btn:hover,
 .btn:focus {
     background: #252525;
     color: #fff;
+}
+
+@media(min-width: 600px) {
+    html {
+        font-size: 1.3125rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
+@media(min-width: 750px) {
+    .flexbox {
+        display: flex;
+    }
+
+    .container{
+        max-width: 100%
+    }
+    
+    img {
+        max-width: 20%;
+    }
+
+    .about-me .container,
+    .articles .container {
+        padding: 1.5em;
+    }
+
+    .articles{
+        background: #99D930;
+        color: #252525;
+    }
+
+    .articles .container h2{
+        border-top: solid 1px #252525;
+    border-bottom: solid 1px #252525;
+    }
+
+    .articles .container .accent-text,
+    article p a,
+    time,
+    .name
+    {
+        color:currentColor;
+    }
+    
+    article p a:hover{
+        color: #fff;
+    }
+
+    .articles .btn {
+        color:#99D930;
+        background:#252525;
+    }
+
 }
