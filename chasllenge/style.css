@@ -85,7 +85,7 @@ a:focus {
 
 header,
 section {
-    padding: 6.25em 0;
+    padding: 2.25em 0;
 }
 
 .inverse {
@@ -125,18 +125,21 @@ section {
 }
 
 @media(min-width: 750px) {
+    header {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
     .flexbox {
         display: flex;
+        align-items: center;
     }
 
     .container{
         max-width: 100%
     }
     
-    img {
-        max-width: 20%;
-    }
-
     .about-me .container,
     .articles .container {
         padding: 1.5em;
@@ -148,8 +151,7 @@ section {
     }
 
     .articles .container h2{
-        border-top: solid 1px #252525;
-    border-bottom: solid 1px #252525;
+        border-color: currentColor;
     }
 
     .articles .container .accent-text,
@@ -165,7 +167,7 @@ section {
     }
 
     .articles .btn {
-        color:#99D930;
+        color:#fff;
         background:#252525;
     }
 
