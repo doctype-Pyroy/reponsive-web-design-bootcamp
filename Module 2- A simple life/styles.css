@@ -4,6 +4,7 @@ body {
     font-family: 'Ubuntu', serif;
     font-size: 1.125rem;
     font-weight: 300;
+    line-height: 1.6;
 }
 img {
     max-width: 100%;
@@ -53,6 +54,7 @@ h1 {
     padding: 1rem 0 2rem;
     display:block;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .article-read-more:hover,
@@ -81,11 +83,16 @@ ul {
     font-weight: 700;
     font-size: .75rem;
     margin-top:0;
+    text-transform: uppercase;
 }
 
 main .subtitle {
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.widget-recent-post-title {
+    line-height:1.4;
 }
 
 /*  layout */
@@ -158,7 +165,7 @@ main .subtitle {
 .widget-title {
     text-transform: uppercase;
     font-family: 'Ubuntu', serif;
-    letter-spacing: 3.6px;
+    letter-spacing: 2px;
     color: #143774;
     font-weight: 700;
     font-size: 1.25em;
@@ -224,6 +231,8 @@ nav a {
     color: #707070;
     font-weight: 700;
     padding: .25em 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 nav a:hover, 
@@ -235,7 +244,7 @@ nav a:focus {
 
 footer {
     background:#143774;
-    color: rgba(255, 255, 255, 0.795);
+    color: rgba(255, 255, 255, 0.65);
     text-align: center;
     height: 9%;
     padding: 2em 0;
