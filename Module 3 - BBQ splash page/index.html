@@ -18,18 +18,43 @@
                 </div>
             </div>
 
-        <main class="form-box">
+        <main class="form-box" id="Main-Content">
             <h2>Become a BBQ master!</h2>
             <p class="subtitle">register today</p>
             <p class="form-text">BBQ isn't just standing in front of your grill wqith it on full blast
                 and hoping for the best. It's an art! One way to speed up the process  is to learn from the 
                 best. You can do that by signing up for this free webinar.
             </p>
-            <input type="text" placeholder="First Name" class="input-box">
-            <input type="text" placeholder="email" class="input-box">
-            <button class="btn btn-gradient">Register</button>
+            <form action="#" method="POST" id="Email-Collector">
+                <input name="firstName" type="text" placeholder="First Name" class="input-box" required>
+                <input name="emailAddress" type="email" placeholder="Email" class="input-box" required>
+                <button class="btn btn-gradient" type="submit">Register</button>
+            </form>
             <p class="legal">We will never share youre info with anyone witheout your permission</p>
         </main>
     </div>
+
+    <script>
+        let emailCollectorForm = document.getElementById("Email-Collector")
+        emailCollectorForm.addEventListener("submit", event => {
+            event.preventDefault()
+
+            let ourFormData = new FormData(event.target)
+
+            let userFirstName = ourFormData.get("firstName")
+            let userEmailAddress = ourFormData.get("emailAddress")
+
+            let updatedHtmlContent = 
+            `<h2>Congradulations ${userFirstName}</h2>
+            <p class="subtitle"> You have registered today🤙🤘</p>
+            <p class="form-text"You are on way to become a BBQ Master!!<br>
+            You will receive a confirmation Email at ${userEmailAddress}, thank you to confirm!
+            </p>
+            
+            <p class="legal">We will never share youre info with anyone witheout your permission</p>`
+
+            document.getElementById("Main-Content").innerHTML = updatedHtmlContent
+        })
+    </script>
 </body>
 </html>

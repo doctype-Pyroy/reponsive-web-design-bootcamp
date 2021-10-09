@@ -18,7 +18,7 @@ img {
 
 input,
 button {
-    display:block;
+    display: block;
     margin: 0 auto .75em;
     padding: .45em 0;
     width: 80%;
@@ -70,6 +70,7 @@ h2 {
     border-image: linear-gradient(90deg, rgb(255,165,29), rgb(255,113,59)) 1;
     max-width: 161px;
     margin: 0 auto;
+    padding-top: 3px;
 }
 
 .legal {
@@ -96,7 +97,8 @@ strong {
 
 .title {
     background-color:#404040;
-    background-image: url(../images/dark-ribs.jpg);
+    background-image: url(../images/ribs.jpg);
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
 }
@@ -123,11 +125,20 @@ main .subtitle{
     padding: 0.5rem 0;
     letter-spacing: 1px;
     font-weight: 900;
+    width: 100%;
+    cursor: pointer;
+    
 }
-
 .btn-gradient {
     background: linear-gradient(90deg, rgba(255,165,29,1) 0%, rgba(255,113,59,1) 100%);
     color: #fff;
+    transform: scale(1);
+    transition: 500ms ;
+}
+.btn-gradient:hover,
+.btn-gradient:focus {
+    color: black;
+    transform: scale(1.2);
 }
 
 .container-title {
@@ -138,6 +149,23 @@ main .subtitle{
     align-items: center;
     max-width: 400px;
     margin: 0 auto;
+}
+
+form {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.input-box {
+    width: 100%;
+    border-color: #8a8a8a5b;
+    font-family: inherit;
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+.input-box:focus {
+    transform: scale(1.1)
 }
 
 
